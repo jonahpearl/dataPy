@@ -3,4 +3,7 @@ A generic conda virtual environment template for data science. Conda can create 
 
 To use:
 * install anaconda or miniconda (https://docs.anaconda.com/anaconda/install/). Ensure that when you open a new terminal window, the base environment is activated (as shown by "(base)" before the terminal prompt). 
-* run: `conda env create -n test --file dataPy_packages.yml`
+* run: `conda env create -n dataPy --file dataPy_packages.yml`
+* Then, for example:
+* `conda activate dataPy`
+* `jupyter notebook`
