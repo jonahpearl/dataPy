@@ -9,5 +9,8 @@ dependencies:
   - scikit-learn
   - matplotlib
   - pip
+  - pandas
+  - umap
+  - statsmodels
   - pip:
     - ffmpeg-python
