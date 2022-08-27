@@ -10,7 +10,7 @@ dependencies:
   - matplotlib
   - pip
   - pandas
-  - umap
   - statsmodels
   - pip:
+    - umap
     - ffmpeg-python
