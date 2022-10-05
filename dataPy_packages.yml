@@ -1,5 +1,6 @@
 name: basicDataPy
 dependencies:
+  - python=3.7
   - numpy
   - jupyter
   - seaborn
