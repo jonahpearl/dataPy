@@ -8,10 +8,11 @@ dependencies:
   - scipy
   - ipython
   - scikit-learn
+  - scikit-image
   - matplotlib
   - pip
   - pandas
   - statsmodels
   - pip:
-    - umap
     - ffmpeg-python
+    - click
