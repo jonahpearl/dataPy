@@ -1,0 +1,14 @@
+name: dataPy
+dependencies:
+  - python=3.7
+  - numpy
+  - jupyter
+  - joblib
+  - scipy
+  - ipython
+  - scikit-learn
+  - scikit-image
+  - matplotlib
+  - pip
+  - pandas
+  - statsmodels
