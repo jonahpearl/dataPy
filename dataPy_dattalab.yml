@@ -9,6 +9,7 @@ dependencies:
   - scikit-learn
   - scikit-image
   - matplotlib
+  - pip
   - pip:
     - av
     - click
