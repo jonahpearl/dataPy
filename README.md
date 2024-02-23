@@ -9,3 +9,16 @@ To use:
 * Then, for example:
 * `conda activate dataPy`
 * `jupyter notebook`
+
+
+## Pytorch (e.g. CW 6-cam pipeline)
+* Get a GPU job on O2: `srun -p gpu_quad -t 1:00:00 --mem 8GB --gres=gpu:1 -c 1 --pty zsh`
+* Make a new env: `conda env create -n dataPy --file /path/to/dataPy_dattalab.yml`
+* Install pytorch stuff: `pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117`
+  * You can use `--dry-run` to test the install first if you want.
+  * Cuda 11.7 is the latest Cuda 11 version that O2 supplies, and is compatible with the majority of our code. Pytorch ships their code with CUDA pre-packaged inside, so you don't need to `module load cuda` before running stuff with these pytorch packages.
+ 
+## KPMS / Gimbal
+See: https://keypoint-moseq.readthedocs.io/en/latest/install.html
+I like to have two installs of KPMS and Gimbal. One set lives in my normal analysis environment, and is installed with CPU versions of JAX. The other lives in its own dedicated environment and has GPU versions of JAX. The upside of this is that you don't have multiple GPU-bound packages in your analysis directory fighting for control of different CUDAs, etc. The downside is you have two versions of KPMS and have to remember to update them both. Pick your poison!
+ 
